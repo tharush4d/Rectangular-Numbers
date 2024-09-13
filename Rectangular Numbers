@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+void printRectangularNumbers(int n) {
+    cout << "Rectangular Numbers:" << endl;
+    for (int i = 1; i <= n; ++i) {
+        int rectangularNumber = i * (i + 1);
+        cout << rectangularNumber << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of rectangular numbers you want to print: ";
+    cin >> n;
+    
+    printRectangularNumbers(n);
+
+    return 0;
+}
